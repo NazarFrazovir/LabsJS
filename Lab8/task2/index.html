@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Слайдер (Карусель)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="slider" id="mySlider"></div>
+
+  <script src="slider.js"></script>
+  <script>
+    const slider = new Slider('#mySlider', {
+      slides: ['Слайд 1', 'Слайд 2', 'Слайд 3', 'Слайд 4'],
+      duration: 500,
+      autoplay: true,
+      showArrows: true,
+      showDots: true
+    });
+  </script>
+</body>
+</html>
