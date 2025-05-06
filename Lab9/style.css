@@ -1,0 +1,102 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #eef2f3;
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    background: #ddd;
+    border: none;
+    outline: none;
+    margin: 0 5px;
+    border-radius: 6px 6px 0 0;
+    transition: background 0.3s;
+  }
+  
+  .tab.active {
+    background: #fff;
+    font-weight: bold;
+  }
+  
+  .form {
+    display: none;
+    background: #fff;
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: left;
+  }
+  
+  .form.active {
+    display: block;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    position: relative;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+  }
+  
+  .form-group input:focus,
+  .form-group select:focus {
+    outline: none;
+    border-color: #6ca0dc;
+  }
+  
+  .form-group small {
+    color: red;
+    display: none;
+  }
+  
+  .form-group.success input,
+  .form-group.success select {
+    border-color: green;
+  }
+  
+  .form-group.error input,
+  .form-group.error select {
+    border-color: red;
+  }
+  
+  .form-group.error small {
+    display: block;
+  }
+  
+  .password .toggle {
+    position: absolute;
+    right: 10px;
+    top: 38px;
+    cursor: pointer;
+  }
+  
+  #successMessage {
+    color: green;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
